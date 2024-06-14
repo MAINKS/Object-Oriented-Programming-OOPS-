@@ -1,0 +1,102 @@
+Git and GitHub Commands
+Basic Git Commands
+
+Version Command
+Check the installed Git version: git --version
+
+Set Up and Configuration
+Set up global username: git config --global user.name "Your Name"
+Set up global email: git config --global user.email "your.email@example.com"
+Check configuration settings: git config --list
+
+Repository Operations
+Initialize a new Git repository: git init
+Clone an existing repository: git clone https://github.com/your-username/your-repository.git
+
+Staging and Committing
+** Stage files for commit: git add <file-or-directory>        - new file / updated file to be tracked by git
+Stage all files: git add .
+Commit staged changes: git commit -m "Commit message"
+
+Branching
+Create a new branch: git branch <branch-name>
+List all branches: git branch
+Switch to a branch: git checkout <branch-name>
+Create and switch to a new branch: git checkout -b <branch-name>
+
+Merging
+Merge a branch into the current branch: git merge <branch-name>
+Pushing and Pulling
+Push changes to the remote repository: git push origin <branch-name>
+Pull changes from the remote repository: git pull origin <branch-name>
+
+Status and Logs
+Check the status of the repository: git status
+View commit history: git log
+
+**Intermediate Git Commands**
+Branch Operations
+Delete a branch: git branch -d <branch-name>
+Delete a remote branch: git push origin --delete <branch-name>
+
+Tagging
+Create a new tag: git tag <tag-name>
+Push tags to remote: git push origin --tags
+
+Stashing
+Stash changes: git stash
+List stashes: git stash list
+Apply a stash: git stash apply <stash-id>
+Drop a stash: git stash drop <stash-id>
+
+Resetting and Reverting
+Reset to a previous commit: git reset --hard <commit-id>
+Revert a commit: git revert <commit-id>
+
+Rebasing
+Rebase the current branch onto another branch: git rebase <branch-name>
+Advanced Git Commands
+
+Cherry-Picking
+Cherry-pick a commit: git cherry-pick <commit-id>
+
+Squashing Commits
+Squash commits interactively: git rebase -i <commit-id>
+
+Rewriting History
+Amend the most recent commit: git commit --amend
+Rewrite commit history with filter-branch: git filter-branch --tree-filter 'command' HEAD
+
+Working with Submodules
+Add a submodule: git submodule add <repository-url>
+Initialize and update submodules: git submodule update --init --recursive
+
+Advanced Log
+View a graphical log of commits: git log --graph --oneline --all
+
+**GitHub Commands**
+Forking and Cloning
+Fork a repository (via GitHub website) and then clone: git clone https://github.com/your-username/forked-repository.git
+
+Creating Pull Requests
+Create a new branch and push: git checkout -b feature-branch then git push origin feature-branch
+Create a pull request (via GitHub website)
+
+Managing Remotes
+Add a new remote repository: git remote add upstream https://github.com/original-owner/original-repository.git
+Fetch from the upstream repository: git fetch upstream
+Merge changes from upstream: git merge upstream/master
+
+Releases
+Create a release (via GitHub website) or push tags for release: git tag <version> then git push origin <version>
+
+
+cd- command directory -to enter into sub folders
+ls -a hideen files view
+
+After modifying a file - Add & Commit to github to save changes
+
+Untracked : when a new file is created
+modified : when a existing file is changed
+Staged : modified file ready to commit
+Unmodified : Updated file
