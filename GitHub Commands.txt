@@ -91,7 +91,7 @@ Releases
 Create a release (via GitHub website) or push tags for release: git tag <version> then git push origin <version>
 
 
-git remote -v
+git remote -v     - to get destination repository of files getting saved at.
 git pull origin main --rebase
 git push origin main
 
@@ -105,3 +105,40 @@ Untracked : when a new file is created
 modified : when a existing file is changed
 Staged : modified file ready to commit
 Unmodified : Updated file
+
+
+***Upload New Folder to newly created repository on github***
+Option 1: Create a New Repository for Python Codes
+Create a New Repository on GitHub:
+
+Go to GitHub and log in to your account.
+Click on the + icon in the top-right corner and select New repository.
+Give your repository a name (e.g., PythonCodes) and optionally add a description.
+Choose whether it should be public or private.
+Click Create repository.
+Clone the New Repository to Your Local Machine:
+
+Copy the HTTPS or SSH URL of the newly created repository.
+In your terminal (inside VS Code or any terminal of your choice), navigate to the directory where you want to clone the repository.
+
+Clone the repository:
+git clone https://github.com/your-username/PythonCodes.git
+This will create a new directory named PythonCodes and clone the empty repository from GitHub.
+Add Your Python Codes to the Local Repository:
+
+Move or copy your Python files and folders into the PythonCodes directory.
+Add, Commit, and Push Your Changes:
+
+Open the terminal in VS Code.
+Navigate to the PythonCodes directory:
+
+cd PythonCodes
+Add all files:
+
+git add .
+Commit your changes:
+
+git commit -m "Initial commit of Python codes"
+Push your changes to GitHub:
+
+git push origin main
