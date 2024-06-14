@@ -91,6 +91,11 @@ Releases
 Create a release (via GitHub website) or push tags for release: git tag <version> then git push origin <version>
 
 
+git remote -v
+git pull origin main --rebase
+git push origin main
+
+
 cd- command directory -to enter into sub folders
 ls -a hideen files view
 
